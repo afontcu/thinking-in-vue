@@ -1,0 +1,44 @@
+[
+  {
+    "id": 4450,
+    "name": "Albercoc Ataronjat",
+    "offer": true,
+    "price": 14.61
+  },
+  {
+    "id": 2212,
+    "name": "Alls Secs",
+    "offer": true,
+    "price": 21.02
+  },
+  {
+    "id": 9981,
+    "name": "Gingebre a daus",
+    "offer": false,
+    "price": 8.07
+  },
+  {
+    "id": 6742,
+    "name": "Llet ATO Semi Natura Brick 1L",
+    "offer": true,
+    "price": 6.04
+  },
+  {
+    "id": 7907,
+    "name": "Nabius vermells safata",
+    "offer": true,
+    "price": 15.74
+  },
+  {
+    "id": 1946,
+    "name": "Nous de Brasil",
+    "offer": false,
+    "price": 3.44
+  },
+  {
+    "id": 6353,
+    "name": "Orellanes d'albercoc safata",
+    "offer": false,
+    "price": 29.56
+  }
+]
