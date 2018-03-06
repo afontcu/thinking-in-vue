@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductRow.vue renders an snapshot: default 1`] = `
+<tr>
+    <td>
+        <!---->
+        name
+    </td>
+(??)
+</tr>
+`;

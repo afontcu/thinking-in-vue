@@ -8,7 +8,7 @@
 <script>
 import FilterableProductTable from './components/FilterableProductTable'
 import Title from '@/components/Title'
-
+import products from './api.json'
 
 export default {
   name: 'App',

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterableProductTable.vue renders an snapshot: default 1`] = `
+<div class="filterable-product-table">
+    <form>
+(??)
+        <p class="filterOffers">
+            <input type="checkbox" id="filterOffers">
+            <label for="filterOffers">Show only offers</label>
+        </p>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+(??)
+                </td>
+(??)
+            </tr>
+(??)
+                </td>
+(??)
+            </tr>
+        </tbody>
+    </table>
+</div>
+`;

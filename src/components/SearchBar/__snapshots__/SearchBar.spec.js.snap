@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar.vue renders an snapshot: default 1`] = `
+<form>
+    <input placeholder="Search..." class="input">
+    <p class="filterOffers">
+        <input type="checkbox" id="filterOffers">
+        <label for="filterOffers">Show only offers</label>
+    </p>
+</form>
+`;
