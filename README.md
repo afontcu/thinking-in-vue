@@ -1,6 +1,6 @@
-# pensant-en-vue
+# thinking-in-vue
 
-> A Vue.js simple demo app
+"Thinking in React" adaptation for Vue
 
 ## Build Setup
 
