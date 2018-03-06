@@ -1,3 +1,3 @@
-import FilterableProductTable from './FilterableProductTable'
+import FilterableProductTableContainer from './FilterableProductTableContainer'
 
-export default FilterableProductTable
+export default FilterableProductTableContainer

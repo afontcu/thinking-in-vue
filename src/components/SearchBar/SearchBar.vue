@@ -12,6 +12,13 @@ export default {
   name: 'SearchBar',
   components: {
     Checkbox
+  },
+  props: {
+    filterText: String,
+    displayOnlyOffers: Boolean
+  },
+  data () {
+    return {}
   }
 }
 </script>

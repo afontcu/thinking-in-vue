@@ -8,7 +8,7 @@
     </thead>
     <tbody>
       <ProductRow
-        v-for="product in products"
+        v-for="product in filteredProducts"
         :key="product.id"
         :name="product.name"
         :price="product.price"
@@ -30,6 +30,25 @@ export default {
     products: {
       type: Array,
       required: true
+    },
+    filterText: String,
+    displayOnlyOffers: Boolean
+  },
+  computed: {
+    filteredProducts () {
+      const productsFilteredByKeyword =
+        this.filterProductsByKeyword(this.products, this.filterText)
+
+      return this.displayOnlyOffers
+        ? productsFilteredByKeyword.filter(p => p.offer)
+        : productsFilteredByKeyword
+    }
+  },
+  methods: {
+    filterProductsByKeyword (products, keyword) {
+      return products.filter(product => {
+        return product.name.toUpperCase().includes(keyword.toUpperCase())
+      })
     }
   }
 }

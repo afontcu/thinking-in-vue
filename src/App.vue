@@ -1,14 +1,13 @@
 <template>
   <div class="c-app">
     <Title fancy>Product List</Title>
-    <FilterableProductTable :products="products" />
+    <FilterableProductTable />
   </div>
 </template>
 
 <script>
 import FilterableProductTable from './components/FilterableProductTable'
 import Title from '@/components/Title'
-import products from './api.json'
 
 export default {
   name: 'App',
@@ -17,9 +16,7 @@ export default {
     Title
   },
   data () {
-    return {
-      products
-    }
+    return {}
   }
 }
 </script>

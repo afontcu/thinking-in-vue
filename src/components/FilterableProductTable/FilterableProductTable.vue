@@ -1,7 +1,12 @@
 <template>
   <div class="filterable-product-table">
-    <SearchBar />
-    <ProductTable :products="products"/>
+    <SearchBar
+      :filterText="filterText"
+      :displayOnlyOffers="displayOnlyOffers" />
+    <ProductTable
+      :products="products"
+      :filterText="filterText"
+      :displayOnlyOffers="displayOnlyOffers"/>
   </div>
 </template>
 
@@ -19,6 +24,14 @@ export default {
     products: {
       type: Array,
       required: true
+    },
+    filterText: {
+      type: String,
+      default: ''
+    },
+    displayOnlyOffers: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
