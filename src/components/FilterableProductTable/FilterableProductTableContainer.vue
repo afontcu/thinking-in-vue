@@ -2,7 +2,9 @@
   <FilterableProductTable
     :products="products"
     :filterText="filterText"
-    :displayOnlyOffers="displayOnlyOffers" />
+    :displayOnlyOffers="displayOnlyOffers"
+    @toggleDisplayOffers="toggleDisplayOffers"
+    @updateFilterText="updateFilterText" />
 </template>
 
 <script>
@@ -17,6 +19,14 @@ export default {
       products,
       filterText: '',
       displayOnlyOffers: false
+    }
+  },
+  methods: {
+    toggleDisplayOffers () {
+      this.displayOnlyOffers = !this.displayOnlyOffers
+    },
+    updateFilterText (newText) {
+      this.filterText = newText
     }
   }
 }

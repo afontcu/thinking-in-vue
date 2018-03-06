@@ -1,7 +1,14 @@
 <template>
   <form>
-    <input class="input" type="text" placeholder="Search..." />
-    <Checkbox name="filterOffers" label="Show only offers" />
+    <input
+      class="input"
+      type="text"
+      placeholder="Search..."
+      @input="handleInput" />
+    <Checkbox
+      name="filterOffers"
+      label="Show only offers"
+      @change="handleCheckbox" />
   </form>
 </template>
 
@@ -19,6 +26,14 @@ export default {
   },
   data () {
     return {}
+  },
+  methods: {
+    handleCheckbox () {
+      this.$emit('toggleDisplayOffers')
+    },
+    handleInput (event) {
+      this.$emit('updateFilterText', event.target.value)
+    }
   }
 }
 </script>

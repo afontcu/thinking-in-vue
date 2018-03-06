@@ -2,7 +2,7 @@
   <table>
     <thead>
       <tr>
-        <th align="left">Name</th>
+        <th width="380" align="left">Name</th>
         <th align="right">Price</th>
       </tr>
     </thead>

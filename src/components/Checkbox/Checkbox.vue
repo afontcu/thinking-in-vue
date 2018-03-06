@@ -1,6 +1,6 @@
 <template>
   <div class="c-checkbox">
-    <input type="checkbox" :id="name" />
+    <input type="checkbox" :id="name" @change="handleChange" />
     <label :for="name">{{ label }}</label>
   </div>
 </template>
@@ -20,6 +20,11 @@ export default {
   },
   data () {
     return {}
+  },
+  methods: {
+    handleChange () {
+      this.$emit('change')
+    }
   }
 }
 </script>

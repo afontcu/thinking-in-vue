@@ -2,7 +2,9 @@
   <div class="filterable-product-table">
     <SearchBar
       :filterText="filterText"
-      :displayOnlyOffers="displayOnlyOffers" />
+      :displayOnlyOffers="displayOnlyOffers"
+      @updateFilterText="updateFilterText"
+      @toggleDisplayOffers="toggleDisplayOffers" />
     <ProductTable
       :products="products"
       :filterText="filterText"
@@ -36,6 +38,14 @@ export default {
   },
   data () {
     return {}
+  },
+  methods: {
+    toggleDisplayOffers () {
+      this.$emit('toggleDisplayOffers')
+    },
+    updateFilterText (value) {
+      this.$emit('updateFilterText', value)
+    }
   }
 }
 </script>
